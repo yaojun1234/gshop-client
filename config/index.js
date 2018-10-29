@@ -10,7 +10,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {  // 请求代理
+      '/api' : { // 匹配 所有以 '/api' 开头的请求路径
+          target: 'http://localhost:4000', // 代理目标的基础路径
+          changeOrigin: true,  // 支持跨域请求
+          pathRewrite: { // 重写路径： 去掉路径中开头的 '/api'
+            '^/api': ''
+          }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -45,10 +53,10 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, './dist/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, './dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
 

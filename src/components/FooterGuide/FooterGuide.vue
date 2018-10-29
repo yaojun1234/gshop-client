@@ -156,7 +156,7 @@
                 .swiper-slide
                   display flex
                   justify-content center
-                  align-items flex-start
+                  align-items flex-starst
                   flex-wrap wrap
                   .link_to_food
                     width 25%
@@ -255,14 +255,14 @@
                         .shop_rating_order_left
                           float left
                           color #ff9a0d
-                          .star //2x图 3x图
+                          .stars //2x图 3x图
                             float left
                             font-size 0
-                            .star-item
+                            .stars-item
                               display inline-block
                               background-repeat no-repeat
-                            &.star-48
-                              .star-item
+                            &.stars-48
+                              .stars-item
                                 width 20px
                                 height 20px
                                 margin-right 22px
@@ -275,8 +275,8 @@
                                   bg-image('../images/stars/star48_half')
                                 &.off
                                   bg-image('../images/stars/star48_off')
-                            &.star-36
-                              .star-item
+                            &.stars-36
+                              .stars-item
                                 width 15px
                                 height 15px
                                 margin-right 6px
@@ -289,8 +289,8 @@
                                   bg-image('../images/stars/star36_half')
                                 &.off
                                   bg-image('../images/stars/star36_off')
-                            &.star-24
-                              .star-item
+                            &.stars-24
+                              .stars-item
                                 width 10px
                                 height 10px
                                 margin-right 3px
