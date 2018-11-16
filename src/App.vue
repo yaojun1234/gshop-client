@@ -16,9 +16,10 @@ export default {
     //this.$store.dispatch('getAddress')
     // 更新状态
     this.getAddress();
+    this.getUserInfo();
   },
   methods: {
-    ...mapActions(['getAddress'])
+    ...mapActions(['getAddress','getUserInfo'])
   },
   components: {
     FooterGuide

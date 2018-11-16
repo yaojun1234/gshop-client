@@ -12,10 +12,18 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-plugin-component": "^1.1.1",
+    "better-scroll": "^1.13.2",
+    "date-fns": "^1.29.0",
+    "mint-ui": "^2.2.13",
+    "mock.js": "^0.2.0",
+    "mockjs": "^1.0.1-beta3",
+    "moment": "^2.22.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "swiper": "^4.4.1",
     "vue": "^2.5.2",
+    "vue-lazyload": "^1.2.6",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
